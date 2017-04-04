@@ -1,0 +1,39 @@
+\documentclass[bibliography=totocnumbered]{scrreprt}
+%\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{textgreek}
+
+
+\begin{document}
+
+
+% Your title page
+\title{How to Generate Such a Neat Report}
+\author{Proudly presented by Bilge \& Philipp}
+\date{April 2017}
+\maketitle
+
+% A table of contents
+\tableofcontents 
+
+
+% Include your chapters
+\input{01_abstract.tex}
+
+\input{02_introduction.tex}
+
+\input{03_background.tex}
+
+% Include the bibliography
+\bibliographystyle{naturemag}
+\bibliography{myrefs}
+
+\begin{comment}
+\end{comment}
+
+\end{document}
